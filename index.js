@@ -1,14 +1,10 @@
-const mongo = require('./mongo')
+const app = require("express")()
+const PORT = process.env.PORT || 3000
 
-const connectToMongoDB = async () => {
-  await mongo().then((mongoose) => {
-    try {
-      console.log('Connected to mongodb!')
-    } finally {
-      mongoose.connection.close()
-    }
-  })
-}
+app.get("",(req,res) => {
+    res.send("Hellow World")
+})
 
-
-connectToMongoDB()
+app.listen(PORT, () => {
+    console.log('App up at port ${PORT}')
+})
