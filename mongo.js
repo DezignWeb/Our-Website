@@ -8,5 +8,6 @@ module.exports = async (mongoPath) => {
     useUnifiedTopology: true,
   })
 
+  
   return mongoose
 }
