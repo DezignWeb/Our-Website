@@ -2,7 +2,7 @@
 const mongo = require('../mongo.js')
 // const mongoose = require('mongoose')
 const MySchema = require('../schemas/Schema.js')
-var mongoPath = "mongodb+srv://Arindam:G4ZcoWs1EJQThH30@cluster0.005ll.mongodb.net/"
+var mongoPath = "mongodb+srv://Owner:RCYMufGVoBuxzYgB@cluster0.005ll.mongodb.net/"
 
 exports.putItemMongoDB = async (params,schemaname,dbname) =>{
     //mongo.mongoPath = 'mongodb+srv://Arindam:G4ZcoWs1EJQThH30@cluster0.005ll.mongodb.net/1LoginData?retryWrites=true&w=majority'

@@ -16,7 +16,8 @@ const putitem = async () =>{
     var userSchema = 'userSchema'
     dbname = "hi"
     console.log("inside putitem",params)
-    mdbservice.putItemMongoDB(params,userSchema,dbname)
+    await mdbservice.putItemMongoDB(params,userSchema,dbname)
+    callback(null,"ji")
 
 }
 
@@ -31,4 +32,5 @@ const queryitem = async () =>{
     console.log(result)
 }
 
-putitem()
+
+exports.putitem = putitem
