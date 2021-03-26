@@ -10,4 +10,5 @@ const connectToMongoDB = async () => {
   })
 }
 
+
 connectToMongoDB()
