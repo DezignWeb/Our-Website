@@ -7,7 +7,8 @@ const path = require('path');
 const insert = require('./API/Insert');
 app.use(express.json());
 router.post('/',function(req,res){
-    console.log(req)
+   res.sendFile(path.join(__dirname, '/Frontend/index.html'))
+   console.log(req.body)
 })
 
 router.get('/about',insert.putitem)
