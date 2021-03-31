@@ -12,5 +12,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "curl": "^0.1.4",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.1"
   }
 }
